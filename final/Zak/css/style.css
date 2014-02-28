@@ -187,3 +187,13 @@ h3 {
 	/*border-style: solid;
 	border-radius: 1px;*/
 }
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
