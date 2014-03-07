@@ -2,322 +2,642 @@
 <html>
 <head>
 	<title>SicBo Table</title>
-	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet/less" type="text/css" href="css/style.less"/>
+	<script src="js/less-1.7.0.min.js" type="text/javascript"></script>
+	<script src="js/global.js"></script>
+	<script src="js/table.js"></script>
+
 </head>
+
 <body>
 
 <div>
+	<!--Top Row Section-->
+	<div class="toprow">
+		<div id="even" class="eveny">
+			<div class="totaltext">
+			EVEN</div>
+		</div>
+
+		<div id="triple6" class="triple">
+			<div class="dice half top six">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom1 six">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom2 six">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+		<div id="triple5" class="triple">
+			<div class="dice half top five">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom1 five">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom2 five">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+		<div id="triple4" class="triple">
+			<div class="dice half top four">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom1 four">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom2 four">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+		<div id="triple3" class="triple">
+			<div class="dice half top three">
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom1 three">
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom2 three">
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+		
+		<div id="triple2" class="triple">
+			<div class="dice half top two">
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom1 two">
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice half bottom2 two">
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+
+		<div id="triple1" class="triple">
+			<div class="dice half top one">
+			<i></i>
+			</div>
+			<div class="dice half bottom1 one">
+			<i></i>
+			</div>
+			<div class="dice half bottom2 one">
+			<i></i>
+			</div>
+		</div>
+		<div id="odd" class="oddy">
+			<div class="totaltext">
+			ODD</div>
+		</div>
+	</div>
+
+	<!--Big Row Section-->
+	<div class="bigrow">
+		<div id="big" class="biggy">
+			<div class="totaltext">
+			BIG</div> 
+			<div class="payouttext">
+			1 wins 1<p>
+			Lose on Any Triple</div>
+		</div>
+		<div id="double6" class="double">
+			<div class="dice third top six">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice third bottom six">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+		<div id="double5" class="double"> 
+			<div class="dice third top five">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice third bottom five">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+		<div id="double4" class="double"> 
+			<div class="dice third top four">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice third bottom four">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+		<div id="anyTriple" class="anyTriply">
+		<div class="totaltext">
+		Any Triple
+		</div> 
+		<div class="payouttext">
+		1 wins 24
+		</div> 
+		</div>
+		
+		<div id="double3" class="double"> 
+			<div class="dice third top three">
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice third bottom three">
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+
+		<div id="double2" class="double">
+			<div class="dice third top two">
+			<i></i>
+			<i></i>
+			</div>
+			<div class="dice third bottom two">
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+
+		<div id="double1" class="double">
+			<div class="dice third top one">
+			<i></i>
+			</div>
+			<div class="dice third bottom one">
+			<i></i>
+			</div>
+		</div>
+
+		<div id="small" class="smally">
+			<div class="totaltext">
+			SMALL</div>
+			<div class="payouttext">
+			1 wins 1<p>
+			Lose on Any Triple</div>
+		</div>
+
+	</div>
 	
 	<!--Totals Row Section-->
-	<div id="totalrow" class="clear">
-			<div class="total"> 
-					<span class="totaltext">4</span>
+	<div class="col14 clear">
+			<div id="total17" class="total"> 
+					<div class="totaltext">17</div>
 					<p>
-					<span class="payouttext">1 wins 60</span>
+					<div class="payouttext">1 wins 60</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">5</span>
+			<div id="total16" class="total"> 
+					<div class="totaltext">16</div>
 					<p>
-					<span class="payouttext">1 wins 20</span>
+					<div class="payouttext">1 wins 20</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">6</span>
+			<div id="total15" class="total"> 
+					<div class="totaltext">15</div>
 					<p>
-					<span class="payouttext">1 wins 18</span>
+					<div class="payouttext">1 wins 18</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">7</span>
+			<div id="total14" class="total"> 
+					<div class="totaltext">14</div>
 					<p>
-					<span class="payouttext">1 wins 12</span>
+					<div class="payouttext">1 wins 12</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">8</span>
+			<div id="total13" class="total"> 
+					<div class="totaltext">13</div>
 					<p>
-					<span class="payouttext">1 wins 8</span>
+					<div class="payouttext">1 wins 8</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">9</span>
+			<div id="total12" class="total"> 
+					<div class="totaltext">12</div>
 					<p>
-					<span class="payouttext">1 wins 6</span>
+					<div class="payouttext">1 wins 6</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">10</span>
+			<div id="total11" class="total"> 
+					<div class="totaltext">11</div>
 					<p>
-					<span class="payouttext">1 wins 6</span>
+					<div class="payouttext">1 wins 6</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">11</span>
+			<div id="total10" class="total"> 
+					<div class="totaltext">10</div>
 					<p>
-					<span class="payouttext">1 wins 6</span>
+					<div class="payouttext">1 wins 6</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">12</span>
+			<div id="total9" class="total"> 
+					<div class="totaltext">9</div>
 					<p>
-					<span class="payouttext">1 wins 6</span>
+					<div class="payouttext">1 wins 6</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">13</span>
+			<div id="total8" class="total"> 
+					<div class="totaltext">8</div>
 					<p>
-					<span class="payouttext">1 wins 8</span>
+					<div class="payouttext">1 wins 8</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">14</span>
+			<div id="total7" class="total"> 
+					<div class="totaltext">7</div>
 					<p>
-					<span class="payouttext">1 wins 12</span>
+					<div class="payouttext">1 wins 12</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">15</span>
+			<div id="total6" class="total"> 
+					<div class="totaltext">6</div>
 					<p>
-					<span class="payouttext">1 wins 18</span>
+					<div class="payouttext">1 wins 18</div>
 			</div>
 
 
-			<div class="total"> 
-					<span class="totaltext">16</span>
+			<div id="total5" class="total"> 
+					<div class="totaltext">5</div>
 					<p>
-					<span class="payouttext">1 wins 20</span>
+					<div class="payouttext">1 wins 20</div>
 			</div>
 
-			<div class="total"> 
-					<span class="totaltext">17</span>
+			<div id="total4" class="total"> 
+					<div class="totaltext">4</div>
 					<p>
-					<span class="payouttext">1 wins 60</span>
+					<div class="payouttext">1 wins 60</div>
 			</div>
 	</div>
 
-	<!-- Two Dice Combos boxes-->
-	<div id="twodicerow" class="clear">
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;</span>
+	<!-- Two Dice Combos section-->
+	<div class="col16 clear">
+		
+			<div id="twodice56" class="twodice">
+				<div class="payouttext2">
+					1 wins 5
 				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
+			</div>
 
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;</span>
+			<div class="twodice"> 
+				<div class="dice five">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
 				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
+				<div class="dice six">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
 
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;</span>
+			<div id="twodice46" class="twodice"> 
+				<div class="dice four">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
 				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
+				<div class="dice six">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
 
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;</span>
+			<div id="twodice16" class="twodice"> 
+				<div class="dice one">
+					<i></i>
 				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
+				<div class="dice six">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
 
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;</span>
+			<div id="twodice15" class="twodice"> 
+				<div class="dice one">
+					<i></i>
 				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
+				<div class="dice five">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>			
+			<div id="twodice36" class="twodice"> 
+				<div class="dice three">
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+				<div class="dice six">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
 
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;</span>
+			<div id="twodice45" class="twodice"> 
+				<div class="dice four">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
 				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
+				<div class="dice five">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+			<div id="twodice35" class="twodice"> 
+				<div class="dice three">
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+				<div class="dice five">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+			<div id="twodice26" class="twodice"> 
+				<div class="dice two">
+					<i></i>
+					<i></i>
+				</div>
+				<div class="dice six">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+			<div id="twodice25" class="twodice"> 
+				<div class="dice two">
+					<i></i>
+					<i></i>
+				</div>
+				<div class="dice five">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+			<div id="twodice34" class="twodice"> 
+				<div class="dice three">
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+				<div class="dice four">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+			<div id="twodice23" class="twodice"> 
+				<div class="dice two">
+					<i></i>
+					<i></i>
+				</div>
+				<div class="dice three">
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+			<div id="twodice14" class="twodice"> 
+				<div class="dice one">
+					<i></i>
+				</div>
+				<div class="dice four">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+			<div id="twodice13" class="twodice"> 
+				<div class="dice one">
+					<i></i>
+				</div>
+				<div class="dice three">
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+			<div id="twodice24" class="twodice"> 
+				<div class="dice two">
+					<i></i>
+					<i></i>
+				</div>
+				<div class="dice four">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+			<div id="twodice12" class="twodice"> 
+				<div class="dice one">
+					<i></i>
+				</div>
+				<div class="dice two">
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+	</div>
 
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;</span>
-				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
+	<div class="col4 clear">
+		<div id="n6543" class="foursome">
+			<div class="fourtext">
+			65<span style="color:red">4</span>3
+			</div>
 		</div>
-
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;</span>
-				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
+		<div id="n6532" class="foursome">
+			<div class="fourtext">
+			6532
+			</div>
 		</div>
-
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;</span>
-				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
+		<div id="n5432" class="foursome">
+			<div class="fourtext">
+			5<span style="color:red">4</span>32
+			</div>
 		</div>
-
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;</span>
-				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
-
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;</span>
-				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
-
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;</span>
-				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
-
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
-
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
-		</div>
-
-		<div>
-			<span class="twodice"> 
-				<div class="squaretop">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div>
-				<div class="squarebottom">&#x25A1;
-					<span class="dot">&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;&#x25CB;</span>
-				</div> 
-			</span>
+		<div id="n4321" class="foursome">
+			<div class="fourtext">
+			<span style="color:red">4</span>32<span style="color:red">1</span>
+			</div>
 		</div>
 	</div>
 
-	<!-- Single Dice-->
-	<div class="clear">
-		<div>
-			<span class="singledice singletext"> 
-				ONE
-				<div class="squaretop single">&#x25A1;
-				</div>
-			</span>
+	<div class = "col6 clear">
+
+		<div id="single6" class="singledice">
+			<div class="dice double six">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
 		</div>
 
-		<div>
-			<span class="singledice singletext"> 
-				TWO
-				<div class="squaretop single">&#x25A1;
-				</div>
-			</span>
+		<div id="single5" class="singledice">
+			<div class="dice double five">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
 		</div>
 
-		<div>
-			<span class="singledice singletext"> 
-				THREE
-				<div class="squaretop single">&#x25A1;
-				</div>
-			</span>
+		<div id="single4" class="singledice">
+			<div class="dice double four">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
+		</div>
+		<div id="single3" class="singledice">
+			<div class="dice double three">
+			<i></i>
+			<i></i>
+			<i></i>
+			</div>
 		</div>
 
-		<div>
-			<span class="singledice singletext"> 
-				FOUR
-				<div class="squaretop single">&#x25A1;
-				</div>
-			</span>
+		<div id="single2" class="singledice">
+			<div class="dice double two">
+			<i></i>
+			<i></i>
+			</div>
 		</div>
 
-		<div>
-			<span class="singledice singletext"> 
-				FIVE
-				<div class="squaretop single">&#x25A1;
-				</div>
-			</span>
-		</div>
-
-		<div>
-			<span class="singledice singletext"> 
-				SIX
-				<div class="squaretop single">&#x25A1;
-				</div>
-			</span>
+		<div id="single1" class="singledice">
+			<div class="dice double one">
+			<i></i>
+			</div>
 		</div>
 	</div>
-	<div class="clear">
-		<div class="footer"> 
-		1 to 1 on ONE Die. &nbsp &nbsp &nbsp &nbsp 2 to 1 on TWO Dice. &nbsp&nbsp&nbsp&nbsp&nbsp 3 to 1 on 3 Dice.
-		</div>
+
+	<div class="col3 clear">
+		<div class="footertext"> 1 to 1 on ONE Die.  </div>
+		<div class="footertext"> 2 to 1 on TWO Dice. </div>
+		<div class="footertext"> 3 to 1 on 3 Dice.   </div>
 	</div>
+	
+	</p>
+	<button id="clear">Clear</button>
+	<button id="clearAll">Clear All Bets</button>
+	<button id="1000">1k</button>
+	<button id="500">500</button>
+	<button id="300">300</button>
+	<button id="100">100</button>
+	<button id="50">50</button>
+	<button id="Roll">ROLL DICE</button>
+
+
 </body>
 </html>

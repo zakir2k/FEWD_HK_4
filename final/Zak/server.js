@@ -14,20 +14,6 @@ var server = http.createServer(function(request, response){
 
 }).listen(8080);
 
-
-var parser = new(less.Parser)({
-  paths: ['.', './lib'], // Specify search paths for @import directives
-  filename: 'css/style.less' // Specify a filename, for better error messages
-});
-
-parser.parse('.class { width: (1 + 1) }', function (e, tree) {
-  tree.toCSS({
-    // Minify CSS output
-    compress: true
-  });
-});
-
-
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback () {
