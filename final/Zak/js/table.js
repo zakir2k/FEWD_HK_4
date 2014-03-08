@@ -50,8 +50,9 @@ $(document).ready(function() {
     }
 
     $("#diceRoll").on('click', function(){
+        alert("Roll has been clicked")
         currentRoll = getRandom();
-        return currentRoll;
+        return currentRoll; 
     });
 
 });

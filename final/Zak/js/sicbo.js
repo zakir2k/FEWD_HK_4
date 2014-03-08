@@ -112,7 +112,7 @@ paytable = {
         '17': 60.0
     },
     twoDice: 6.0,
-    wxyz: 8.0,
+    wxyz: 7.0,
     doubleDice: 11.0,
     specTriple: 150.0,
     anyTriple: 24.0,
