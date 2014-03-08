@@ -12,7 +12,7 @@ $(document).ready(function() {
     $("#clearAll").on('click', function(event) {
         event.preventDefault();
         alert("ClearAll is pressed");
-        $(".total, #big, #small, #odd, #even, #anyTriple .twodice, .singledice, .triple, .double").removeClass("highlight");
+        $(".total, #big, #small, #odd, #even, #anyTriple, .twodice, .singledice, .triple, .double, .foursome").removeClass("highlight");
         selector = "bet";
     });
 
@@ -49,6 +49,9 @@ $(document).ready(function() {
         $(area).removeClass("highlight");
     }
 
-    $("diceRoll")
+    $("#diceRoll").on('click', function(){
+        currentRoll = getRandom();
+        return currentRoll;
+    });
 
 });

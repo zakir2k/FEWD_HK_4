@@ -10,6 +10,7 @@
 @white: #FFFFFF;
 @red: #FF0038;
 @yellow: #fff45c;
+@grey: #eeeeee;
 @table-width: 1008px;
 
 // // Variables
@@ -141,6 +142,13 @@ h3 {
 	float: left;
 }
 
+.twodicetext{
+	height: 100px;
+	border: solid 2px black;
+	background-color: @grey;
+	float: left;
+}
+
 .singledice{
 	height: 90px;
 	border: solid 2px black;
@@ -150,7 +158,7 @@ h3 {
 }
 
 .foursome{
-	height: 40px;
+	height: 55px;
 	border: solid 2px black;
 	background-color: @blue;
 	margin: 0px;
@@ -166,14 +174,12 @@ h3 {
 
 .fourtext{
 	font-size: 25px;
-	position: relative;
-	vertical-align: middle;
+	letter-spacing:5px;
 	text-align: center;
-	float: left;
-	top: 3px;
-	left: 100px
-
+	margin-left: auto;
+	margin-right: auto;
 }
+
 .singletext{
 	position: relative;
 	float: right;
@@ -186,6 +192,7 @@ h3 {
 	border-bottom: solid 4px black;
 	border-top: solid 2px black;
 	margin: 0px;
+	background-color: @grey;
 	text-align: center;	
 	float: left;
 }
@@ -245,10 +252,17 @@ h3 {
 }
 
 .double{
-	width: 58.0px;
+	width: 57.3px;
 	height: 100px;
 	border: solid 1px @black;
 	background-color: @blue;
+	float: left;
+}
+
+.doublecontainer{
+	width: 174px;
+	height: 137px;
+	border: solid 1px @black;
 	float: left;
 }
 
@@ -257,11 +271,10 @@ h3 {
 	}
 
 .doubletext{
-	width: 43.3px;
-	height: 30px;
-	border: solid 1px @black;
-	background-color: @blue;
-	float: left;
+	text-align: center;
+	width: 173.7px;
+	height: 34px;
+	margin-top: 105px;
 }
 
 #anyTriple{
@@ -328,16 +341,6 @@ h3 {
 	margin: 0px;
 	float: left;
 }
-
-.twodicetext{
-	height: 100px;
-	font-size: 15px;
-	border: solid 2px black;
-	background-color: @blue;
-	margin: 0px;
-	float: left;
-}
-
 
 //Columns in Rows:
 .col16 > div{
@@ -496,4 +499,8 @@ button{
 		position: relative;
 		-webkit-transform-origin: 0% 0%;
 		-webkit-transform: translate(43px,7px) scale(1.6,1.6);
+}
+
+#roller{
+	float:right;
 }
